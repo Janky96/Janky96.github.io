@@ -750,8 +750,7 @@ body.preloader-site {
 
 @media (max-width: 599px) {
   .palette-colors-container {
-    width: 90%;
-    /* grid-template-columns: repeat(3, 1fr); */
+    width: 100%;
     gap: 0.5rem;
   }
 
