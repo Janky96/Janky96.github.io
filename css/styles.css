@@ -17,6 +17,11 @@ COLORS:
   justify-content: center;
 }
 
+@font-face {
+  font-family: CarolynaProBlack;
+  src: url("CarolynaProBlack.ttf");
+}
+
 :root {
   --main-green: #979e75;
   --dark-green: #707654;
@@ -67,7 +72,7 @@ html {
 }
 
 .hero .title {
-  font-family: "Rouge Script", sans-serif;
+  font-family: "CarolynaProblack", sans-serif;
   font-weight: 700;
   transform: rotate(-2deg);
   font-size: 5rem;
@@ -746,10 +751,12 @@ body.preloader-site {
 @media (max-width: 599px) {
   .palette-colors-container {
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 2rem;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 0.5rem;
+  }
+
+  .circle {
+    width: 4rem;
+    height: 4rem;
   }
 }
