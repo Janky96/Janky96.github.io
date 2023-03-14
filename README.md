@@ -5,4 +5,4 @@ This is the wedding invitation website of the wedding of me and my fiancée, gue
 ## Credits
 
 The original project was from [daengdoang](https://github.com/daengdoang)
-I got his project and then edited some things for our wedding, his original project was so helpful, everything was out of the box and I have to changed minor things
+I got his project and then edited some things for our wedding, his original project was so helpful, everything was out of the box and I had to change minor things
