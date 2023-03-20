@@ -659,12 +659,12 @@ body.preloader-site {
   color: white;
 }
 
-.section-light {
+/* .section-light {
   background-image: url(../image/divider-flowers-leaves.png);
   background-position: bottom -30px center;
   background-repeat: no-repeat;
   background-size: initial;
-}
+} */
 
 .instagram {
   color: var(--main-green);
