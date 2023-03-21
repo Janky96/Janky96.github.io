@@ -8,6 +8,10 @@ COLORS:
 #A68A64
 #936639
 
+
+BG-brown invitation
+#faf0e6
+
 */
 
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script");
@@ -22,10 +26,16 @@ COLORS:
   src: url("CarolynaProBlack.ttf");
 }
 
+@font-face {
+  font-family: DanteMTRegular;
+  src: url("DanteMTRegaular.ttf");
+}
+
 :root {
   --main-green: #979e75;
   --dark-green: #707654;
   --main-brown: #a57559;
+  --main-brown-bg-invitation: #faf0e6;
 }
 
 * {
@@ -63,7 +73,6 @@ html {
       rgba(165, 117, 89, 0.65)
     ),
     rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
-  /* background-attachment: fixed; */
   background-size: cover;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -71,7 +80,7 @@ html {
 }
 
 .hero .title {
-  font-family: "CarolynaProblack", sans-serif;
+  font-family: "CarolynaProBlack", sans-serif;
   font-weight: 700;
   transform: rotate(-2deg);
   font-size: 5rem;
@@ -88,6 +97,11 @@ html {
 .hero .tempatwaktu {
   padding-top: 35px;
   font-size: 1.3rem;
+}
+
+.subtitle.tempatwaktu {
+  font-family: "DanteMTRegular";
+  font-size: 2rem;
 }
 
 .hero .hero-foot {
@@ -322,7 +336,7 @@ html {
 .nama-lengkap {
   font-family: "Rouge Script", sans-serif;
   color: var(--main-green);
-  font-size: 3.5rem;
+  font-size: 5rem;
   letter-spacing: 0px;
   padding-bottom: 6px;
   line-height: 3.7rem;
@@ -338,7 +352,8 @@ html {
 }
 
 .bodytext {
-  font-size: 18px;
+  font-family: "DanteMTRegular";
+  font-size: 24px;
 }
 
 .waktu {
@@ -701,49 +716,75 @@ body.preloader-site {
   border-radius: 50%;
 }
 
+.light-blue-flower {
+  background: linear-gradient(
+      rgba(165, 117, 89, 0.65),
+      rgba(165, 117, 89, 0.65)
+    ),
+    rgba(0, 0, 0, 0.55) url("image/light-blue-flower.png");
+  transform: rotate(90deg);
+  width: 20rem;
+}
+
 .color-palette-1 {
-  background-color: #997d6f;
+  background-color: #f5e4d6;
 }
 
 .color-palette-2 {
-  background-color: #926d5b;
+  background-color: #e4c2a7;
 }
 
 .color-palette-3 {
-  background-color: #a37458;
+  background-color: #e1bab1;
 }
 
 .color-palette-4 {
-  background-color: #946247;
+  background-color: #d7a598;
 }
 
 .color-palette-5 {
-  background-color: #a7a99b;
+  background-color: #997d6f;
 }
 
 .color-palette-6 {
-  background-color: #abb090;
+  background-color: #926d5b;
 }
 
 .color-palette-7 {
-  background-color: #979e75;
+  background-color: #a37458;
 }
 
 .color-palette-8 {
-  background-color: #707654;
+  background-color: #946247;
 }
 
 .color-palette-9 {
-  background-color: #cac1b8;
+  background-color: #a7a99b;
 }
 
 .color-palette-10 {
+  background-color: #abb090;
+}
+
+.color-palette-11 {
+  background-color: #979e75;
+}
+
+.color-palette-12 {
+  background-color: #707654;
+}
+
+.color-palette-13 {
+  background-color: #cac1b8;
+}
+
+.color-palette-14 {
   background-color: #b0a7a2;
 }
-.color-palette-11 {
+.color-palette-15 {
   background-color: #9d9389;
 }
-.color-palette-12 {
+.color-palette-16 {
   background-color: #91837a;
 }
 
@@ -751,6 +792,7 @@ body.preloader-site {
   .palette-colors-container {
     width: 100%;
     gap: 0.5rem;
+    row-gap: 1.5rem;
   }
 
   .circle {

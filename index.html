@@ -1,388 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#656D4A" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Yabuts</title>
 
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
-    <link rel="icon" type="image/png" href="image/favicon.png" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
-    <!-- Begin Script for Countdown -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#656D4A" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Yabuts</title>
 
-      gtag('config', 'UA-23064379-20');
-    </script>
-    <!-- Begin Script for Countdown -->
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+  <!-- Begin Script for Countdown -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Github Button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+    gtag('config', 'UA-23064379-20');
+  </script>
+  <!-- Begin Script for Countdown -->
 
-  <body>
-    <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
-      </div>
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <!-- Begin Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <img src="image/favicon.png" alt="Flower" />
     </div>
-    <!-- End Preloader-->
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
+  </div>
+  <!-- End Preloader-->
+  <!-- Begin Header -->
+  <div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand is-fixed-top">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#palette">
+                Palette
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#when">
+                When
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#where">
+                Where
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#rsvp">
+                RSVP
+              </a>
             </div>
           </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#palette">
-                  Palette
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#when">
-                  When
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#where">
-                  Where
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <!-- <h1 class="subtitle">Undangan Pernikahan</h1> -->
-            <h2 class="title">Jan Karsten & Charina Marie</h2>
-            <h4 class="subtitle tempatwaktu">
-              
-                June 10, 2023
-                <br>
-                17:00
-                <br>
-                Villa Vittoriale
-              
-            </h4>
-          </div>
-          <!-- Start Countdown -->       
-          <div>
-            <ul id="hitungmundur" >
-              <li><span id="days" class="days">00</span><p class="days_text">Days</p></li>
-              <li class="separator">:</li>
-              <li><span id="hours" class="hours">00</span><p class="hours_text">Hours</p></li>
-              <li class="separator">:</li>
-              <li><span id="minutes" class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-              <li class="separator">:</li>
-              <li><span id="seconds" class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              let countDownDate = new Date("June 10, 2023 17:00:00").getTime();
-              
-                  
+        </div>
+      </nav>
+      <!-- End Mobile Nav -->
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- <h1 class="subtitle">Undangan Pernikahan</h1> -->
+          <h2 class="title">Jan Karsten & Charina Marie</h2>
+          <h4 class="subtitle tempatwaktu">
 
-              const countDown = setInterval(function() {
+            June 10, 2023
+            <br>
+            17:00
+            <br>
+            Villa Vittoriale
 
-                let now = new Date().getTime();
+          </h4>
+        </div>
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span id="days" class="days">00</span>
+              <p class="days_text">Days</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span id="hours" class="hours">00</span>
+              <p class="hours_text">Hours</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span id="minutes" class="minutes">00</span>
+              <p class="minutes_text">Minutes</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span id="seconds" class="seconds">00</span>
+              <p class="seconds_text">Seconds</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            let countDownDate = new Date("June 10, 2023 17:00:00").getTime();
+
+
+
+            const countDown = setInterval(function ()
+            {
+
+              let now = new Date().getTime();
               let timeleft = countDownDate - now;
-                let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-                let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-                let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+              let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+              let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+              let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-                document.getElementById("days").innerHTML = days
+              document.getElementById("days").innerHTML = days
               document.getElementById("hours").innerHTML = hours
               document.getElementById("minutes").innerHTML = minutes
               document.getElementById("seconds").innerHTML = seconds
-              }, 1000)
-              
+            }, 1000)
 
-              
-            </script>  
-          </div>
-          <!-- End Countdown -->
+
+
+          </script>
         </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#palette">Palette</a>
-                  </li>
-                  <li>
-                    <a href="#when">When</a>
-                  </li>
-                  <li>
-                    <a href="#where">Where</a>
-                  </li>
-                  <li>
-                    <a href="#rsvp">RSVP</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
-    </div>
-    <!-- End Header -->
-
-    <!-- Begin Main Content -->
-    <div class="main-content">
-    <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          We are happy to invite you to our wedding
-          <br />
-        </p>
-
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            Yabut
-          </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-          Dinglasan
-          </div>
-           
-        </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-      </section>
-      <!-- End regular-section-->   
-      
-      <!-- Begin Palette Section -->
-      <section class="section-light-green" id="palette">
-        <div class="container palette">
-
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Palette</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>For beautiful bla bla </strong>
-              <br>
-              We have chosen a palette
-              <br>
-            </p>
-          </div>
-
-          <div class="palette-colors-container">
-            <span class="circle color-palette-1"></span>
-            <span class="circle color-palette-2"></span>
-            <span class="circle color-palette-3"></span>
-            <span class="circle color-palette-4"></span>
-            <span class="circle color-palette-5"></span>
-            <span class="circle color-palette-6"></span>
-            <span class="circle color-palette-7"></span>
-            <span class="circle color-palette-8"></span>
-            <span class="circle color-palette-8"></span>
-            <span class="circle color-palette-8"></span>
-            <span class="circle color-palette-8"></span>
-            <span class="circle color-palette-8"></span>
-          </div>
-
-        </div>
-        <div class="space40px"></div>
-      </section>
-      <!-- End Palette Section -->
-      
-      <!-- Begin When Section -->
-      <section class="section-dark" id="when">
-        <div class="container">
-
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">When</h1>
-          </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Saturday</div> 
-                  <div class="waktu tanggal-angka has-text-centered">10</div>
-                  <div class="waktu tanggal-bulan has-text-centered">June 2023</div>
-              </p>
-            
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                Ceremony:
-                <br>
-                <strong>17:00</strong>
-              </p>
-            
-            </div>
-
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                Dinner:
-                <br>
-                <strong>20:30</strong>
-              </h1>
-              
-              
-            </div>
-
-          </div>
-        </div>
-        <div class="space40px"></div>
-      </section>
-      <!-- End When Section -->
-
-      <!-- Where Section -->
-      <section class="section-darker" id="where" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Where</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>Villa Vittoriale</strong>
-              <br>
-              Via Ronzini, 30, 95039
-              <br>
-              Trecastagni CT
-              <br>
-            </p>
-          </div>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.6620853354416!2d15.076168715313559!3d37.633635679785385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fe55779d469b%3A0x83fd58bd37c24c70!2sVilla%20Vittoriale!5e0!3m2!1sen!2sit!4v1679330702803!5m2!1sen!2sit" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://goo.gl/maps/1EtqAyGuGG6KCJEbA" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Google Maps
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Where Section -->
-
-      <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Confirmation</h1>
-            </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Since bla bla bla
-                <br>
-                We would really appreciate that you confirm your attendance
-                <br>
-                1 month before
-                <br>
-                <br>
-                Stay safe & God Bless
-                </p>
-     
-              <a href="https://wa.me/+393884514167/?text=I will be glad to participate to your wedding" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Jan Karsten
-              </a>
-              
-
-          
-              <a href="https://wa.me/+393802176211/?text=I&nbsp;will&nbsp;be&nbsp;glad&nbsp;to&nbsp;participate&nbsp;to&nbsp;your&nbsp;wedding" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Charina Marie
-              </a>
-              <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                <a class="instagram":" href="https://www.instagram.com/jankarsten96/" target="_blank" alt="Instagram Sherly">
-                  <i class="fab fa-instagram"></i> @jankarsten96
-                </a>
-                &nbsp
-                <a class="instagram" href="https://www.instagram.com/_charinamarie/" target="_blank" alt="Instagram Daeng">
-                  <i class="fab fa-instagram"></i> @_charinamarie
-                </a>
-              </p>
-
-            </div>
- 
-         </div>
-        </div>
-      </section>
-      <!-- End RSVP Content -->
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <div class="footer">
-      <div class="container">
-          <p class="has-vertically-align">2023 Jan Karsten Yabut</p>
+        <!-- End Countdown -->
       </div>
-    </div>
-    <!-- End Footer -->
+      <!-- End Hero Content-->
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot ">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#palette">Palette</a>
+                </li>
+                <li>
+                  <a href="#when">When</a>
+                </li>
+                <li>
+                  <a href="#where">Where</a>
+                </li>
+                <li>
+                  <a href="#rsvp">RSVP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Menu -->
+    </section>
+    <!-- End Hero -->
+  </div>
+  <!-- End Header -->
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
-  </body>
+  <!-- Begin Main Content -->
+  <div class="main-content">
+    <!-- Begin regular-section-->
+    <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+      id="regular-section">
+
+
+      <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+        We are happy to invite you to our wedding
+        <br />
+      </p>
+
+      <span class="space40px"></span>
+      <span class="space40px"></span>
+
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <div class="nama-lengkap">
+          Yabut
+        </div>
+        <div class="ampersand">&</div>
+        <div class="nama-lengkap">
+          Dinglasan
+        </div>
+
+      </div>
+      <span class="space40px"></span>
+      <div data-aos="fade-up light-blue-flower" data-aos-easing="linear" class="light-blue-flower">
+        <!-- <img class="light-blue-flower" src="image/light-blue-flower.png" alt="~~~"> -->
+        <!-- <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~"> -->
+      </div>
+    </section>
+    <!-- End regular-section-->
+
+    <!-- Begin Palette Section -->
+    <section class="section-light-green" id="palette">
+      <div class="container palette">
+
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">Palette</h1>
+          <p class="tempat is-larger has-text-centered">
+            <br>
+            We kindly encourage you to <strong>dress in our color palette</strong>
+            <br>
+            for cohesive photos
+          </p>
+        </div>
+
+        <div class="palette-colors-container">
+          <span class="circle color-palette-1"></span>
+          <span class="circle color-palette-2"></span>
+          <span class="circle color-palette-3"></span>
+          <span class="circle color-palette-4"></span>
+          <span class="circle color-palette-5"></span>
+          <span class="circle color-palette-6"></span>
+          <span class="circle color-palette-7"></span>
+          <span class="circle color-palette-8"></span>
+          <span class="circle color-palette-9"></span>
+          <span class="circle color-palette-10"></span>
+          <span class="circle color-palette-11"></span>
+          <span class="circle color-palette-12"></span>
+          <span class="circle color-palette-13"></span>
+          <span class="circle color-palette-14"></span>
+          <span class="circle color-palette-15"></span>
+          <span class="circle color-palette-16"></span>
+        </div>
+
+      </div>
+      <div class="space40px"></div>
+    </section>
+    <!-- End Palette Section -->
+
+    <!-- Begin When Section -->
+    <section class="section-dark" id="when">
+      <div class="container">
+
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">When</h1>
+        </div>
+        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column is-4 has-vertically-aligned-content">
+
+            <p class="is-larger has-text-centered">
+            <div class="waktu tanggal-hari has-text-centered">Saturday</div>
+            <div class="waktu tanggal-angka has-text-centered">10</div>
+            <div class="waktu tanggal-bulan has-text-centered">June 2023</div>
+            </p>
+
+          </div>
+          <div class="column is-4 has-vertically-aligned-content">
+
+            <p class="waktu is-larger has-text-centered">
+              Ceremony:
+              <br>
+              <strong>17:00</strong>
+            </p>
+
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+
+            <h1 class="waktu is-larger has-text-centered">
+              Dinner:
+              <br>
+              <strong>20:30</strong>
+            </h1>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="space40px"></div>
+    </section>
+    <!-- End When Section -->
+
+    <!-- Where Section -->
+    <section class="section-darker" id="where">
+      <div class="container">
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">Where</h1>
+          <p class="tempat is-larger has-text-centered">
+            <strong>Villa Vittoriale</strong>
+            <br>
+            Via Ronzini, 30, 95039
+            <br>
+            Trecastagni CT
+            <br>
+          </p>
+        </div>
+        <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.6620853354416!2d15.076168715313559!3d37.633635679785385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fe55779d469b%3A0x83fd58bd37c24c70!2sVilla%20Vittoriale!5e0!3m2!1sen!2sit!4v1679330702803!5m2!1sen!2sit"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="space40px"></div>
+        <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://goo.gl/maps/1EtqAyGuGG6KCJEbA" class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <i class="far fa-directions"></i>
+            &nbsp;&nbsp;Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Where Section -->
+
+    <!-- Begin RSVP Content -->
+    <section class="section-dark contact" id="rsvp">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Confirmation
+            </h1>
+          </div>
+          <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <p class="h2 subtitle">
+              The courtesy of your reply is requested
+              <br>
+              <strong>a month before</strong>
+              <br>
+              <br>
+              Stay safe & God Bless
+            </p>
+
+            <a href="https://wa.me/+393884514167/?text=I will be glad to participate to your wedding"
+              class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+              <i class="fab fa-whatsapp"></i>
+              &nbsp;&nbsp;Jan Karsten
+            </a>
+
+
+
+            <a href="https://wa.me/+393802176211/?text=I&nbsp;will&nbsp;be&nbsp;glad&nbsp;to&nbsp;participate&nbsp;to&nbsp;your&nbsp;wedding"
+              class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+              <i class="fab fa-whatsapp"></i>
+              &nbsp;&nbsp;Charina Marie
+            </a>
+            <div class="space40px"></div>
+
+            <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+            </div>
+            <div class="space40px"></div>
+            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+              <a class="instagram" :" href="https://www.instagram.com/jankarsten96/" target="_blank"
+                alt="Instagram Sherly">
+                <i class="fab fa-instagram"></i> @jankarsten96
+              </a>
+              &nbsp
+              <a class="instagram" href="https://www.instagram.com/_charinamarie/" target="_blank"
+                alt="Instagram Daeng">
+                <i class="fab fa-instagram"></i> @_charinamarie
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End RSVP Content -->
+  </div>
+  <!-- End Main Content -->
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="container">
+      <p class="has-vertically-align">2023 Jan Karsten Yabut</p>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menikah.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out",
+      duration: 800,
+    });
+  </script>
+</body>
+
 </html>
